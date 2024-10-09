@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sophia Epstein - Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+
+    nav a {
+      padding: 14px 20px;
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      margin: 0;
+    }
+
+    nav a:hover {
+      background-color: #4CAF50;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 20px;
+    }
+
+    .tabcontent.active {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Sophia Epstein's Website</h1>
+    <p>Researcher | Student | Enthusiast</p>
+  </header>
+
+  <!-- Navigation Links (Tabs) -->
+  <nav>
+    <a href="javascript:void(0)" onclick="openTab('home')">Home</a>
+    <a href="javascript:void(0)" onclick="openTab('research')">Research</a>
+    <a href="javascript:void(0)" onclick="openTab('publications')">Publications</a>
+    <a href="javascript:void(0)" onclick="openTab('academics')">Academics</a>
+    <a href="javascript:void(0)" onclick="openTab('contact')">Contact</a>
+  </nav>
+
+  <!-- Tab Contents -->
+  <div id="home" class="tabcontent active">
+    <h2>Home</h2>
+    <p>Hi, I'm Sophia Epstein! Welcome to my personal website where I share my research, publications, and academic journey. I am a student and researcher in [your field], passionate about [insert brief intro].</p>
+  </div>
+
+  <div id="research" class="tabcontent">
+    <h2>Research Interests</h2>
+    <p>I'm deeply interested in areas such as:</p>
+    <ul>
+      <li>Interest 1: Explanation</li>
+      <li>Interest 2: Explanation</li>
+      <li>Interest 3: Explanation</li>
+    </ul>
+  </div>
+
+  <div id="publications" class="tabcontent">
+    <h2>Publications</h2>
+    <p>Here are some of my recent works:</p>
+    <ul>
+      <li><a href="link-to-publication-1" target="_blank">Publication 1</a></li>
+      <li><a href="link-to-publication-2" target="_blank">Publication 2</a></li>
+      <li><a href="link-to-publication-3" target="_blank">Publication 3</a></li>
+    </ul>
+  </div>
+
+  <div id="academics" class="tabcontent">
+    <h2>Academics</h2>
+    <p>Here are some of the courses I've taken:</p>
+    <ul>
+      <li><a href="link-to-coursework-1" target="_blank">Course 1</a></li>
+      <li><a href="link-to-coursework-2" target="_blank">Course 2</a></li>
+      <li><a href="link-to-coursework-3" target="_blank">Course 3</a></li>
+    </ul>
+  </div>
+
+  <div id="contact" class="tabcontent">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me via:</p>
+    <ul>
+      <li><a href="mailto:your-email@example.com">Email: your-email@example.com</a></li>
+      <li><a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a></li>
+      <li><a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">Google Scholar</a></li>
+    </ul>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Sophia Epstein</p>
+  </footer>
+
+  <!-- JavaScript to Handle Tab Navigation -->
+  <script>
+    function openTab(tabName) {
+      // Hide all tabcontent
+      var i, tabcontent;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+
+      // Show the selected tab
+      document.getElementById(tabName).classList.add("active");
+    }
+  </script>
+
+</body>
+
+</html>
