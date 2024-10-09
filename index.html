@@ -5,122 +5,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sophia Epstein - Homepage</title>
+  <title>Sophia Epstein - Researcher</title>
   <style>
-    /* Basic styling */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Merriweather', serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #fff;
       color: #333;
     }
 
-    header {
-      background-color: #4CAF50;
-      color: white;
+    /* General Styling */
+    h1, h2, p {
       text-align: center;
-      padding: 2rem 1rem;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      color: #444;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f4f4f4;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin: 0;
+      font-size: 2.8rem;
+      margin: 0.5rem 0;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight: 300;
+      margin-bottom: 2rem;
     }
 
     nav {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-top: -20px;
+      position: sticky;
+      top: 0;
+      background-color: #f4f4f4;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     nav a {
-      padding: 16px 24px;
-      display: block;
-      color: white;
-      text-align: center;
+      padding: 14px 20px;
+      display: inline-block;
+      font-size: 1.1rem;
+      color: #333;
       text-decoration: none;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin: 0 15px;
     }
 
     nav a:hover {
-      background-color: #4CAF50;
-      transform: translateY(-2px);
+      color: #4CAF50;
+      transition: color 0.3s;
     }
 
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Specific Tab Content Styling */
     .tabcontent {
       display: none;
-      padding: 40px;
-      max-width: 800px;
-      margin: 20px auto;
-      background-color: white;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      transition: all 0.3s ease;
     }
 
     .tabcontent.active {
       display: block;
     }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    ul li {
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
-
-    ul li a {
-      text-decoration: none;
-      color: #4CAF50;
-      transition: color 0.3s ease;
-    }
-
-    ul li a:hover {
-      color: #333;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #333;
-      color: white;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-
-    /* Responsive styling */
+    /* Responsive Design */
     @media screen and (max-width: 768px) {
-      nav a {
-        padding: 12px 16px;
-      }
-
-      header h1 {
+      h1 {
         font-size: 2rem;
       }
 
-      .tabcontent {
-        padding: 20px;
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 1rem;
       }
     }
   </style>
@@ -131,10 +117,10 @@
   <!-- Header Section -->
   <header>
     <h1>Sophia Epstein</h1>
-    <p>Researcher | PhD Student</p>
+    <p>PhD Student | Researcher</p>
   </header>
 
-  <!-- Navigation Links (Tabs) -->
+  <!-- Navigation -->
   <nav>
     <a href="javascript:void(0)" onclick="openTab('home')">Home</a>
     <a href="javascript:void(0)" onclick="openTab('research')">Research</a>
@@ -143,55 +129,59 @@
     <a href="javascript:void(0)" onclick="openTab('contact')">Contact</a>
   </nav>
 
-  <!-- Tab Contents -->
-  <div id="home" class="tabcontent active">
-    <h2>Home</h2>
-    <p>I am currently a PhD student at the Oden Institute, University of Texas at Austin. My research interests span [insert your research areas]. Feel free to explore the rest of my site for more information on my work and academic interests.</p>
-  </div>
+  <!-- Home Section -->
+  <section id="home" class="tabcontent active">
+    <h2>Welcome</h2>
+    <p>I am currently pursuing my PhD at the Oden Institute, University of Texas at Austin. My research focuses on [insert research interests here], where I aim to [insert goal or main focus].</p>
+  </section>
 
-  <div id="research" class="tabcontent">
+  <!-- Research Section -->
+  <section id="research" class="tabcontent">
     <h2>Research Interests</h2>
-    <p>I'm deeply interested in areas such as:</p>
+    <p>My work focuses on various aspects of [your research field]. Below are some key areas of interest:</p>
     <ul>
-      <li>Interest 1: Brief explanation.</li>
-      <li>Interest 2: Brief explanation.</li>
-      <li>Interest 3: Brief explanation.</li>
+      <li>Area 1: [Brief explanation]</li>
+      <li>Area 2: [Brief explanation]</li>
+      <li>Area 3: [Brief explanation]</li>
     </ul>
-  </div>
+  </section>
 
-  <div id="publications" class="tabcontent">
+  <!-- Publications Section -->
+  <section id="publications" class="tabcontent">
     <h2>Publications</h2>
-    <p>Here are some of my recent works:</p>
+    <p>Here are some of my selected publications:</p>
     <ul>
-      <li><a href="link-to-publication-1" target="_blank">Publication 1</a></li>
-      <li><a href="link-to-publication-2" target="_blank">Publication 2</a></li>
-      <li><a href="link-to-publication-3" target="_blank">Publication 3</a></li>
+      <li><a href="link-to-publication-1" target="_blank">Publication Title 1</a></li>
+      <li><a href="link-to-publication-2" target="_blank">Publication Title 2</a></li>
+      <li><a href="link-to-publication-3" target="_blank">Publication Title 3</a></li>
     </ul>
-  </div>
+  </section>
 
-  <div id="academics" class="tabcontent">
+  <!-- Academics Section -->
+  <section id="academics" class="tabcontent">
     <h2>Academics</h2>
-    <p>Here are some of the courses I've taken:</p>
+    <p>Courses I've completed as part of my academic journey:</p>
     <ul>
-      <li><a href="link-to-coursework-1" target="_blank">Course 1</a></li>
-      <li><a href="link-to-coursework-2" target="_blank">Course 2</a></li>
-      <li><a href="link-to-coursework-3" target="_blank">Course 3</a></li>
+      <li><a href="link-to-coursework-1" target="_blank">Course Title 1</a></li>
+      <li><a href="link-to-coursework-2" target="_blank">Course Title 2</a></li>
+      <li><a href="link-to-coursework-3" target="_blank">Course Title 3</a></li>
     </ul>
-  </div>
+  </section>
 
-  <div id="contact" class="tabcontent">
+  <!-- Contact Section -->
+  <section id="contact" class="tabcontent">
     <h2>Contact</h2>
-    <p>Feel free to reach out to me via:</p>
+    <p>If you'd like to get in touch, feel free to reach me at:</p>
     <ul>
       <li><a href="mailto:sepstein@utexas.edu">Email: sepstein@utexas.edu</a></li>
       <li><a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a></li>
       <li><a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">Google Scholar</a></li>
     </ul>
-  </div>
+  </section>
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 Sophia Epstein</p>
+    <p>&copy; 2024 Sophia Epstein | Powered by curiosity & research</p>
   </footer>
 
   <!-- JavaScript to Handle Tab Navigation -->
