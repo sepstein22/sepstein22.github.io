@@ -7,56 +7,121 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sophia Epstein - Homepage</title>
   <style>
+    /* Basic styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     header {
       background-color: #4CAF50;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem 1rem;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
     }
 
     nav {
       display: flex;
       justify-content: center;
       background-color: #333;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     nav a {
-      padding: 14px 20px;
+      padding: 16px 24px;
       display: block;
       color: white;
       text-align: center;
       text-decoration: none;
-      margin: 0;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     nav a:hover {
       background-color: #4CAF50;
+      transform: translateY(-2px);
     }
 
     .tabcontent {
       display: none;
-      padding: 20px;
+      padding: 40px;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: all 0.3s ease;
     }
 
     .tabcontent.active {
       display: block;
     }
 
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #4CAF50;
+      transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+      color: #333;
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       background-color: #333;
       color: white;
       position: fixed;
       width: 100%;
       bottom: 0;
+    }
+
+    /* Responsive styling */
+    @media screen and (max-width: 768px) {
+      nav a {
+        padding: 12px 16px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .tabcontent {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -65,8 +130,8 @@
 
   <!-- Header Section -->
   <header>
-    <h1>Welcome to Sophia Epstein's Website</h1>
-    <p>Researcher | Student | Enthusiast</p>
+    <h1>Sophia Epstein</h1>
+    <p>Researcher | PhD Student</p>
   </header>
 
   <!-- Navigation Links (Tabs) -->
@@ -81,16 +146,16 @@
   <!-- Tab Contents -->
   <div id="home" class="tabcontent active">
     <h2>Home</h2>
-    <p>Hi, I'm Sophia Epstein! Welcome to my personal website where I share my research, publications, and academic journey. I am a student and researcher in [your field], passionate about [insert brief intro].</p>
+    <p>I am currently a PhD student at the Oden Institute, University of Texas at Austin. My research interests span [insert your research areas]. Feel free to explore the rest of my site for more information on my work and academic interests.</p>
   </div>
 
   <div id="research" class="tabcontent">
     <h2>Research Interests</h2>
     <p>I'm deeply interested in areas such as:</p>
     <ul>
-      <li>Interest 1: Explanation</li>
-      <li>Interest 2: Explanation</li>
-      <li>Interest 3: Explanation</li>
+      <li>Interest 1: Brief explanation.</li>
+      <li>Interest 2: Brief explanation.</li>
+      <li>Interest 3: Brief explanation.</li>
     </ul>
   </div>
 
@@ -118,7 +183,7 @@
     <h2>Contact</h2>
     <p>Feel free to reach out to me via:</p>
     <ul>
-      <li><a href="mailto:your-email@example.com">Email: your-email@example.com</a></li>
+      <li><a href="mailto:sepstein@utexas.edu">Email: sepstein@utexas.edu</a></li>
       <li><a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a></li>
       <li><a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">Google Scholar</a></li>
     </ul>
