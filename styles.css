@@ -46,9 +46,9 @@ body {
   }
   .footer-logo {
     float: right; /* Aligns the logo to the right */
-    width: 30px;
+    width: 10px;
     height: auto; 
-    max-width: 50%;
+    max-width: 100%;
     margin: 1rem; /* Adds space around the logo */
   }
   
