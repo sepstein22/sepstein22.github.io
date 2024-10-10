@@ -42,11 +42,10 @@ body {
     text-align: center;
     padding: 2rem;
     background-color: #f4f4f4;
-    color:  #333;
   }
   .footer-logo {
     float: right; /* Aligns the logo to the right */
-    width: 10px;
+    width: 50px;
     height: auto; 
     max-width: 100%;
     margin: 1rem; /* Adds space around the logo */
