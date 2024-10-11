@@ -51,4 +51,18 @@ body {
     max-width: 100%;
     margin: 1rem; /* Adds space around the logo */
   }
+  .bio-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bio-image {
+    width: 50%; /* Adjust to make the image smaller */
+    margin-right: 20px; /* Adds spacing between the image and the text */
+  }
+  
+  .bio-text {
+    width: 50%; /* Takes up the other half of the container */
+  }
+  
   
