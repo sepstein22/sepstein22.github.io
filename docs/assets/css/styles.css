@@ -51,18 +51,28 @@ body {
     max-width: 100%;
     margin: 1rem; /* Adds space around the logo */
   }
+  
   .bio-section {
     display: flex;
     align-items: center;
   }
   
   .bio-image {
-    width: 50%; /* Adjust to make the image smaller */
+    width: 30px; /* Adjust to make the image smaller */
+    height: auto;
     margin-right: 20px; /* Adds spacing between the image and the text */
   }
   
   .bio-text {
-    width: 50%; /* Takes up the other half of the container */
+    flex: 1; /* Takes up the other half of the container */
   }
   
+  #hero {
+    background-image: url('https://plus.unsplash.com/premium_photo-1718188840468-966eda66d93f?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG5ldXJvbnN8ZW58MHx8MHx8fDA%3D');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: white; /* Change text color to ensure visibility */
+    text-align: center;
+    padding: 50px 0;
+}
   
