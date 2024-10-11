@@ -2,11 +2,6 @@
 layout: default
 title: Home
 ---
-<section id="hero">
-    <h1>Welcome to My Website</h1>
-    <p>I am Sophia Epstein, a PhD student and researcher.</p>
-</section>
-
 <section id="home">
   <h2>Welcome</h2>
   <div class="bio-section">
@@ -15,18 +10,6 @@ title: Home
   </div>
 </section>
 
-<script>
-    window.addEventListener("scroll", function() {
-        const heroSection = document.getElementById("hero");
-        heroSection.style.opacity = 1 - window.scrollY / window.innerHeight;
-        
-        // If you want to completely remove it from view after scrolling a certain distance
-        if (window.scrollY > window.innerHeight) {
-            heroSection.style.display = 'none';
-        } else {
-            heroSection.style.display = 'block';
-        }
-    });
-</script>
+
 
 
