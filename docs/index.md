@@ -15,3 +15,18 @@ title: Home
   </div>
 </section>
 
+<script>
+    window.addEventListener("scroll", function() {
+        const heroSection = document.getElementById("hero");
+        heroSection.style.opacity = 1 - window.scrollY / window.innerHeight;
+        
+        // If you want to completely remove it from view after scrolling a certain distance
+        if (window.scrollY > window.innerHeight) {
+            heroSection.style.display = 'none';
+        } else {
+            heroSection.style.display = 'block';
+        }
+    });
+</script>
+
+
