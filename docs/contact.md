@@ -1,3 +1,7 @@
+---
+layout: default
+title: Contact
+---
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YEBPX0GHZ0"></script>
 <script>
