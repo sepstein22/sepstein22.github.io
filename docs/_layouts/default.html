@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ page.title }}</title>
-    <!-- Link to the styles.css file -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-  </head>
-  <body>
-    <!-- Header Section -->
+</head>
+<body>
     <header>
-      <h1>Sophia Epstein</h1>
-      <p>PhD Student | Researcher</p>
+        <h1>Sophia Epstein</h1>
+        <p>PhD Student | Researcher</p>
     </header>
 
-    <!-- Navigation -->
     {% include nav.html %}
 
-    <!-- Main Content -->
     <main>
-      {{ content }}
+        {{ content }}
     </main>
 
-    <!-- Footer Section -->
     <footer>
-      <p>&copy; 2024 Sophia Epstein | Powered by curiosity</p>
-
-      <div class="social-icons">
-        <a href="mailto:sepstein@utexas.edu" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon"></a>
-        <a href="https://www.linkedin.com/in/sophia-epstein-5a4085166" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn Icon"></a>
-        <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Scholar Icon"></a>
-      </div>
+        <p>&copy; 2024 Sophia Epstein | Powered by curiosity</p>
+        <div class="social-icons">
+            <a href="mailto:sepstein@utexas.edu" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon"></a>
+            <a href="https://www.linkedin.com/in/sophia-epstein-5a4085166" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn Icon"></a>
+            <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Scholar Icon"></a>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
